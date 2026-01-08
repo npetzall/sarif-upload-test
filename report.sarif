@@ -81,7 +81,9 @@
                   "startLine": 6,
                   "byteOffset": 82,
                   "byteLength": 16,
-                  "snippet": "backoff = \"0.4.0"
+                  "snippet": {
+                    "text": "backoff = \"0.4.0"
+                  }
                 }
               }
             }
@@ -107,7 +109,9 @@
                   "startLine": 7,
                   "byteOffset": 100,
                   "byteLength": 12,
-                  "snippet": "rsa = \"0.9.8"
+                  "snippet": {
+                    "text": "rsa = \"0.9.8"
+                  }
                 }
               }
             }
