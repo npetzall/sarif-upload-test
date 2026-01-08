@@ -78,12 +78,9 @@
                   "uri": "file:///home/npetzall/repos/npetzall/sarif-upload-test/Cargo.toml"
                 },
                 "region": {
-                  "startLine": 6,
+                  "startLine": 7,
                   "byteOffset": 82,
                   "byteLength": 16,
-                  "snippet": {
-                    "text": "backoff = \"0.4.0"
-                  }
                 }
               }
             }
@@ -106,12 +103,9 @@
                   "uri": "file:///home/npetzall/repos/npetzall/sarif-upload-test/Cargo.toml"
                 },
                 "region": {
-                  "startLine": 7,
+                  "startLine": 8,
                   "byteOffset": 100,
                   "byteLength": 12,
-                  "snippet": {
-                    "text": "rsa = \"0.9.8"
-                  }
                 }
               }
             }
