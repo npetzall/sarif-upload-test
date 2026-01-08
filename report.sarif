@@ -1,0 +1,123 @@
+{
+  "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+  "version": "2.1.0",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "cargo-deny",
+          "version": "0.18.9",
+          "semanticVersion": "0.18.9",
+          "rules": [
+            {
+              "id": "cargo-deny/RUSTSEC-2023-0071",
+              "name": "A vulnerability advisory was detected: RUSTSEC-2023-0071",
+              "shortDescription": {
+                "text": "Marvin Attack: potential key recovery through timing sidechannels"
+              },
+              "fullDescription": {
+                "text": "Marvin Attack: potential key recovery through timing sidechannels",
+                "markdown": "# [RUSTSEC-2023-0071](https://github.com/RustCrypto/RSA/issues/19#issuecomment-1822995643)\nMarvin Attack: potential key recovery through timing sidechannels\n## Description\n### Impact\nDue to a non-constant-time implementation, information about the private key is leaked through timing information which is observable over the network. An attacker may be able to use that information to recover the key.\n\n### Patches\nNo patch is yet available, however work is underway to migrate to a fully constant-time implementation.\n\n### Workarounds\nThe only currently available workaround is to avoid using the `rsa` crate in settings where attackers are able to observe timing information, e.g. local use on a non-compromised computer is fine.\n\n### References\nThis vulnerability was discovered as part of the \"[Marvin Attack]\", which revealed several implementations of RSA including OpenSSL had not properly mitigated timing sidechannel attacks.\n\n[Marvin Attack]: https://people.redhat.com/~hkario/marvin/\n\n## Dependency Graph\n\n```\nrsa v0.9.10\n└── dummy_crate v0.1.0\n\n```\n"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "help": {
+                "text": "For more information, see cargo-deny documentation",
+                "markdown": "[advisories check](https://embarkstudios.github.io/cargo-deny/checks/advisories/index.html)\n[vulnerability diagnostic](https://embarkstudios.github.io/cargo-deny/checks/advisories/diags.html#vulnerability)"
+              },
+              "properties": {
+                "tags": [
+                  "security",
+                  "vulnerability"
+                ],
+                "precision": "high",
+                "problem.severity": "error"
+              }
+            },
+            {
+              "id": "cargo-deny/RUSTSEC-2025-0012",
+              "name": "An unmaintained advisory was detected: RUSTSEC-2025-0012",
+              "shortDescription": {
+                "text": "`backoff` is unmaintained."
+              },
+              "fullDescription": {
+                "text": "`backoff` is unmaintained.",
+                "markdown": "# [RUSTSEC-2025-0012](https://github.com/ihrwein/backoff/issues/66)\n`backoff` is unmaintained.\n## Description\nThe [backoff](https://crates.io/crates/backoff) crate is no longer actively maintained. For exponential backoffs/retrying, you can use the [backon](https://crates.io/crates/backon) crate.\n\n## Dependency Graph\n\n```\nbackoff v0.4.0\n└── dummy_crate v0.1.0\n\n```\n"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "help": {
+                "text": "For more information, see cargo-deny documentation",
+                "markdown": "[advisories check](https://embarkstudios.github.io/cargo-deny/checks/advisories/index.html)\n[unmaintained diagnostic](https://embarkstudios.github.io/cargo-deny/checks/advisories/diags.html#unmaintained)"
+              },
+              "properties": {
+                "tags": [
+                  "security",
+                  "unmaintained"
+                ],
+                "precision": "high",
+                "problem.severity": "error"
+              }
+            }
+          ]
+        }
+      },
+      "results": [
+        {
+          "ruleId": "cargo-deny/RUSTSEC-2025-0012",
+          "message": {
+            "text": "`backoff` is unmaintained."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///home/npetzall/repos/npetzall/sarif-upload-test/Cargo.toml"
+                },
+                "region": {
+                  "startLine": 6,
+                  "byteOffset": 82,
+                  "byteLength": 16,
+                  "snippet": "backoff = \"0.4.0"
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "cargo-deny/advisory-id": "RUSTSEC-2025-0012",
+            "cargo-deny/loc": "de057bb40d09e781"
+          }
+        },
+        {
+          "ruleId": "cargo-deny/RUSTSEC-2023-0071",
+          "message": {
+            "text": "Marvin Attack: potential key recovery through timing sidechannels"
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///home/npetzall/repos/npetzall/sarif-upload-test/Cargo.toml"
+                },
+                "region": {
+                  "startLine": 7,
+                  "byteOffset": 100,
+                  "byteLength": 12,
+                  "snippet": "rsa = \"0.9.8"
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "cargo-deny/advisory-id": "RUSTSEC-2023-0071",
+            "cargo-deny/loc": "3191bef84745b06"
+          }
+        }
+      ]
+    }
+  ]
+}
