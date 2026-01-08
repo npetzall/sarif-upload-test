@@ -80,7 +80,7 @@
                 "region": {
                   "startLine": 7,
                   "byteOffset": 82,
-                  "byteLength": 16,
+                  "byteLength": 16
                 }
               }
             }
@@ -105,7 +105,7 @@
                 "region": {
                   "startLine": 8,
                   "byteOffset": 100,
-                  "byteLength": 12,
+                  "byteLength": 12
                 }
               }
             }
