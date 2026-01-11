@@ -23,7 +23,7 @@
               },
               "help": {
                 "text": "Marvin Attack: potential key recovery through timing sidechannels",
-                "markdown": "[RUSTSEC-2023-0071](https://github.com/RustCrypto/RSA/issues/19#issuecomment-1822995643) - Marvin Attack: potential key recovery through timing sidechannels\n## Description\n### Impact\nDue to a non-constant-time implementation, information about the private key is leaked through timing information which is observable over the network. An attacker may be able to use that information to recover the key.\n\n### Patches\nNo patch is yet available, however work is underway to migrate to a fully constant-time implementation.\n\n### Workarounds\nThe only currently available workaround is to avoid using the `rsa` crate in settings where attackers are able to observe timing information, e.g. local use on a non-compromised computer is fine.\n\n### References\nThis vulnerability was discovered as part of the \"[Marvin Attack]\", which revealed several implementations of RSA including OpenSSL had not properly mitigated timing sidechannel attacks.\n\n[Marvin Attack]: https://people.redhat.com/~hkario/marvin/\n\n## Dependency Graph\n\n```\nrsa v0.9.10\n└── dummy_crate v0.1.0\n\n```\n"
+                "markdown": "[RUSTSEC-2023-0071](https://github.com/RustCrypto/RSA/issues/19#issuecomment-1822995643) - Marvin Attack: potential key recovery through timing sidechannels\n## Description\n### Impact\nDue to a non-constant-time implementation, information about the private key is leaked through timing information which is observable over the network. An attacker may be able to use that information to recover the key.\n\n### Patches\nNo patch is yet available, however work is underway to migrate to a fully constant-time implementation.\n\n### Workarounds\nThe only currently available workaround is to avoid using the `rsa` crate in settings where attackers are able to observe timing information, e.g. local use on a non-compromised computer is fine.\n\n### References\nThis vulnerability was discovered as part of the \"[Marvin Attack]\", which revealed several implementations of RSA including OpenSSL had not properly mitigated timing sidechannel attacks.\n\n[Marvin Attack]: https://people.redhat.com/~hkario/marvin/\n\n## Dependency Graph\n\n```\nrsa v0.9.10\n└── dummy_crate v0.1.0\n```\n"
               },
               "properties": {
                 "tags": [
@@ -48,7 +48,7 @@
               },
               "help": {
                 "text": "`backoff` is unmaintained.",
-                "markdown": "[RUSTSEC-2025-0012](https://github.com/ihrwein/backoff/issues/66) - `backoff` is unmaintained.\n## Description\nThe [backoff](https://crates.io/crates/backoff) crate is no longer actively maintained. For exponential backoffs/retrying, you can use the [backon](https://crates.io/crates/backon) crate.\n\n## Dependency Graph\n\n```\nbackoff v0.4.0\n└── dummy_crate v0.1.0\n\n```\n"
+                "markdown": "[RUSTSEC-2025-0012](https://github.com/ihrwein/backoff/issues/66) - `backoff` is unmaintained.\n## Description\nThe [backoff](https://crates.io/crates/backoff) crate is no longer actively maintained. For exponential backoffs/retrying, you can use the [backon](https://crates.io/crates/backon) crate.\n\n## Dependency Graph\n\n```\nbackoff v0.4.0\n└── dummy_crate v0.1.0\n```\n"
               },
               "properties": {
                 "tags": [
