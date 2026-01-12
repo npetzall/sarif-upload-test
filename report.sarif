@@ -144,7 +144,7 @@
         {
           "ruleId": "cargo-deny/RUSTSEC-2024-0384",
           "message": {
-            "text": "`instant` is unmaintained"
+            "text": "`instant` is unmaintained, transitive dependency"
           },
           "level": "error",
           "locations": [
@@ -200,7 +200,7 @@
         {
           "ruleId": "cargo-deny/RUSTSEC-2024-0320",
           "message": {
-            "text": "yaml-rust is unmaintained."
+            "text": "yaml-rust is unmaintained., transitive dependency"
           },
           "level": "error",
           "locations": [
