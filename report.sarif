@@ -35,6 +35,56 @@
               }
             },
             {
+              "id": "cargo-deny/RUSTSEC-2024-0320",
+              "name": "An unmaintained advisory was detected: RUSTSEC-2024-0320",
+              "shortDescription": {
+                "text": "yaml-rust is unmaintained."
+              },
+              "fullDescription": {
+                "text": "The maintainer seems [unreachable](https://github.com/chyh1990/yaml-rust/issues/197).\n\nMany issues and pull requests have been submitted over the years\nwithout any [response](https://github.com/chyh1990/yaml-rust/issues/160).\n\n## Alternatives\n\nConsider switching to the actively maintained `yaml-rust2` fork of the original project:\n\n- [yaml-rust2](https://github.com/Ethiraric/yaml-rust2)\n- [yaml-rust2 @ crates.io](https://crates.io/crates/yaml-rust2)"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "help": {
+                "text": "yaml-rust is unmaintained.",
+                "markdown": "[RUSTSEC-2024-0320](https://github.com/rustsec/advisory-db/issues/1921) - yaml-rust is unmaintained.\n## Description\nThe maintainer seems [unreachable](https://github.com/chyh1990/yaml-rust/issues/197).\n\nMany issues and pull requests have been submitted over the years\nwithout any [response](https://github.com/chyh1990/yaml-rust/issues/160).\n\n## Alternatives\n\nConsider switching to the actively maintained `yaml-rust2` fork of the original project:\n\n- [yaml-rust2](https://github.com/Ethiraric/yaml-rust2)\n- [yaml-rust2 @ crates.io](https://crates.io/crates/yaml-rust2)\n\n## Dependency Graph\n\n```\nyaml-rust v0.4.5\n└── serde_yaml v0.8.26\n    └── dummy_crate v0.1.0\n```\n"
+              },
+              "properties": {
+                "tags": [
+                  "security",
+                  "unmaintained"
+                ],
+                "precision": "high",
+                "problem.severity": "error"
+              }
+            },
+            {
+              "id": "cargo-deny/RUSTSEC-2024-0384",
+              "name": "An unmaintained advisory was detected: RUSTSEC-2024-0384",
+              "shortDescription": {
+                "text": "`instant` is unmaintained"
+              },
+              "fullDescription": {
+                "text": "This crate is no longer maintained, and the author recommends using the maintained [`web-time`] crate instead.\n\n[`web-time`]: https://crates.io/crates/web-time"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "help": {
+                "text": "`instant` is unmaintained",
+                "markdown": "RUSTSEC-2024-0384 - `instant` is unmaintained\n## Description\nThis crate is no longer maintained, and the author recommends using the maintained [`web-time`] crate instead.\n\n[`web-time`]: https://crates.io/crates/web-time\n\n## Dependency Graph\n\n```\ninstant v0.1.13\n└── backoff v0.4.0\n    └── dummy_crate v0.1.0\n```\n"
+              },
+              "properties": {
+                "tags": [
+                  "security",
+                  "unmaintained"
+                ],
+                "precision": "high",
+                "problem.severity": "error"
+              }
+            },
+            {
               "id": "cargo-deny/RUSTSEC-2025-0012",
               "name": "An unmaintained advisory was detected: RUSTSEC-2025-0012",
               "shortDescription": {
@@ -92,6 +142,34 @@
           }
         },
         {
+          "ruleId": "cargo-deny/RUSTSEC-2024-0384",
+          "message": {
+            "text": "`instant` is unmaintained"
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///home/npetzall/repos/npetzall/sarif-upload-test/Cargo.toml"
+                },
+                "region": {
+                  "startLine": 7,
+                  "byteOffset": 82,
+                  "byteLength": 16,
+                  "snippet": {
+                    "text": "backoff = \"0.4.0"
+                  }
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "cargo-deny/advisory-id": "RUSTSEC-2024-0384",
+            "cargo-deny/loc": "de057bb40d09e781"
+          }
+        },
+        {
           "ruleId": "cargo-deny/RUSTSEC-2023-0071",
           "message": {
             "text": "Marvin Attack: potential key recovery through timing sidechannels"
@@ -117,6 +195,34 @@
           "partialFingerprints": {
             "cargo-deny/advisory-id": "RUSTSEC-2023-0071",
             "cargo-deny/loc": "3191bef84745b06"
+          }
+        },
+        {
+          "ruleId": "cargo-deny/RUSTSEC-2024-0320",
+          "message": {
+            "text": "yaml-rust is unmaintained."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///home/npetzall/repos/npetzall/sarif-upload-test/Cargo.toml"
+                },
+                "region": {
+                  "startLine": 11,
+                  "byteOffset": 184,
+                  "byteLength": 17,
+                  "snippet": {
+                    "text": "serde_yaml = \"0.8"
+                  }
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "cargo-deny/advisory-id": "RUSTSEC-2024-0320",
+            "cargo-deny/loc": "c2fcaca50e933a44"
           }
         }
       ]
