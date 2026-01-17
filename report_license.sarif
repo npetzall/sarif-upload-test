@@ -162,6 +162,9 @@
                   "byteLength": 0,
                   "snippet": {
                     "text": ""
+                  },
+                  "message": {
+                    "text": "unknown location in file"
                   }
                 }
               }
