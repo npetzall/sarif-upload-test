@@ -11,72 +11,20 @@
           "informationUri": "https://embarkstudios.github.io/cargo-deny/",
           "rules": [
             {
-              "id": "cargo-deny/license/no-license-field/dummy_crate@0.1.0",
-              "name": "A crate did not have a license field: dummy_crate@0.1.0",
+              "id": "cargo-deny/license/rejected/instant@0.1.13",
+              "name": "failed to satisfy license requirements: instant@0.1.13",
               "shortDescription": {
-                "text": "license expression was not specified in manifest for crate 'dummy_crate = 0.1.0'"
+                "text": "failed to satisfy license requirements: instant@0.1.13"
               },
               "fullDescription": {
-                "text": "license expression was not specified in manifest for crate 'dummy_crate = 0.1.0'"
-              },
-              "defaultConfiguration": {
-                "level": "warning"
-              },
-              "help": {
-                "text": "license expression was not specified in manifest for crate 'dummy_crate = 0.1.0'",
-                "markdown": "license expression was not specified in manifest for crate 'dummy_crate = 0.1.0'\n## Dependency Graph\n\n```\ndummy_crate v0.1.0\n\n```\n"
-              },
-              "properties": {
-                "tags": [
-                  "license",
-                  "compliance",
-                  "no-license-field"
-                ],
-                "precision": "high",
-                "problem.severity": "warning"
-              }
-            },
-            {
-              "id": "cargo-deny/license/rejected/dummy_crate@0.1.0",
-              "name": "A license was not explicitly accepted: dummy_crate@0.1.0",
-              "shortDescription": {
-                "text": "failed to satisfy license requirements"
-              },
-              "fullDescription": {
-                "text": "failed to satisfy license requirements"
+                "text": "failed to satisfy license requirements: instant@0.1.13"
               },
               "defaultConfiguration": {
                 "level": "error"
               },
               "help": {
                 "text": "failed to satisfy license requirements",
-                "markdown": "failed to satisfy license requirements\n\nApache-2.0\n\n**License Details:**\n- Apache-2.0: rejected: license is not explicitly allowed\n\n**License Information:**\n\nApache-2.0 - Apache License 2.0:\n  - OSI approved\n  - FSF Free/Libre\n\n\n## Dependency Graph\n\n```\ndummy_crate v0.1.0\n\n```\n"
-              },
-              "properties": {
-                "tags": [
-                  "license",
-                  "compliance",
-                  "rejected"
-                ],
-                "precision": "high",
-                "problem.severity": "error"
-              }
-            },
-            {
-              "id": "cargo-deny/license/rejected/instant@0.1.13",
-              "name": "rn: A license was not explicitly accepted: instant@0.1.13",
-              "shortDescription": {
-                "text": "rsd: failed to satisfy license requirements"
-              },
-              "fullDescription": {
-                "text": "rfd: failed to satisfy license requirements"
-              },
-              "defaultConfiguration": {
-                "level": "error"
-              },
-              "help": {
-                "text": "rht: failed to satisfy license requirements",
-                "markdown": "rhm: failed to satisfy license requirements\n\nBSD-3-Clause\n\n**License Details:**\n- BSD-3-Clause: rejected: license is not explicitly allowed\n\n**License Information:**\n\nBSD-3-Clause - BSD 3-Clause \"New\" or \"Revised\" License:\n  - OSI approved\n  - FSF Free/Libre\n\n\n## Dependency Graph\n\n```\ninstant v0.1.13\n└── backoff v0.4.0\n    └── dummy_crate v0.1.0\n\n```\n"
+                "markdown": "failed to satisfy license requirements\n\nBSD-3-Clause\n\n**License Details:**\n- BSD-3-Clause: rejected: license is not explicitly allowed\n\n**License Information:**\n\nBSD-3-Clause - BSD 3-Clause \"New\" or \"Revised\" License:\n  - OSI approved\n  - FSF Free/Libre\n\n## Dependency Graph\n\n```\ninstant v0.1.13\n└── backoff v0.4.0\n    └── dummy_crate v0.1.0\n```\n"
               },
               "properties": {
                 "tags": [
@@ -90,19 +38,19 @@
             },
             {
               "id": "cargo-deny/license/rejected/ryu@1.0.22",
-              "name": "A license was not explicitly accepted: ryu@1.0.22",
+              "name": "failed to satisfy license requirements: ryu@1.0.22",
               "shortDescription": {
-                "text": "failed to satisfy license requirements"
+                "text": "failed to satisfy license requirements: ryu@1.0.22"
               },
               "fullDescription": {
-                "text": "failed to satisfy license requirements"
+                "text": "failed to satisfy license requirements: ryu@1.0.22"
               },
               "defaultConfiguration": {
                 "level": "error"
               },
               "help": {
                 "text": "failed to satisfy license requirements",
-                "markdown": "failed to satisfy license requirements\n\nApache-2.0 OR BSL-1.0\n\n**License Details:**\n- Apache-2.0: rejected: license is not explicitly allowed\n- BSL-1.0: rejected: license is not explicitly allowed\n\n**License Information:**\n\nApache-2.0 - Apache License 2.0:\n  - OSI approved\n  - FSF Free/Libre\n\nBSL-1.0 - Boost Software License 1.0:\n  - OSI approved\n  - FSF Free/Libre\n\n\n## Dependency Graph\n\n```\nryu v1.0.22\n└── serde_yaml v0.8.26\n    └── dummy_crate v0.1.0\n\n```\n"
+                "markdown": "failed to satisfy license requirements\n\nApache-2.0 OR BSL-1.0\n\n**License Details:**\n- Apache-2.0: rejected: license is not explicitly allowed\n- BSL-1.0: rejected: license is not explicitly allowed\n\n**License Information:**\n\nApache-2.0 - Apache License 2.0:\n  - OSI approved\n  - FSF Free/Libre\n\nBSL-1.0 - Boost Software License 1.0:\n  - OSI approved\n  - FSF Free/Libre\n\n## Dependency Graph\n\n```\nryu v1.0.22\n└── serde_yaml v0.8.26\n    └── dummy_crate v0.1.0\n```\n"
               },
               "properties": {
                 "tags": [
@@ -116,19 +64,19 @@
             },
             {
               "id": "cargo-deny/license/rejected/subtle@2.6.1",
-              "name": "A license was not explicitly accepted: subtle@2.6.1",
+              "name": "failed to satisfy license requirements: subtle@2.6.1",
               "shortDescription": {
-                "text": "failed to satisfy license requirements"
+                "text": "failed to satisfy license requirements: subtle@2.6.1"
               },
               "fullDescription": {
-                "text": "failed to satisfy license requirements"
+                "text": "failed to satisfy license requirements: subtle@2.6.1"
               },
               "defaultConfiguration": {
                 "level": "error"
               },
               "help": {
                 "text": "failed to satisfy license requirements",
-                "markdown": "failed to satisfy license requirements\n\nBSD-3-Clause\n\n**License Details:**\n- BSD-3-Clause: rejected: license is not explicitly allowed\n\n**License Information:**\n\nBSD-3-Clause - BSD 3-Clause \"New\" or \"Revised\" License:\n  - OSI approved\n  - FSF Free/Libre\n\n\n## Dependency Graph\n\n```\nsubtle v2.6.1\n└── rsa v0.9.10\n    └── dummy_crate v0.1.0\n\n```\n"
+                "markdown": "failed to satisfy license requirements\n\nBSD-3-Clause\n\n**License Details:**\n- BSD-3-Clause: rejected: license is not explicitly allowed\n\n**License Information:**\n\nBSD-3-Clause - BSD 3-Clause \"New\" or \"Revised\" License:\n  - OSI approved\n  - FSF Free/Libre\n\n## Dependency Graph\n\n```\nsubtle v2.6.1\n└── rsa v0.9.10\n    └── dummy_crate v0.1.0\n```\n"
               },
               "properties": {
                 "tags": [
@@ -142,19 +90,19 @@
             },
             {
               "id": "cargo-deny/license/rejected/unicode-ident@1.0.22",
-              "name": "A license was not explicitly accepted: unicode-ident@1.0.22",
+              "name": "failed to satisfy license requirements: unicode-ident@1.0.22",
               "shortDescription": {
-                "text": "failed to satisfy license requirements"
+                "text": "failed to satisfy license requirements: unicode-ident@1.0.22"
               },
               "fullDescription": {
-                "text": "failed to satisfy license requirements"
+                "text": "failed to satisfy license requirements: unicode-ident@1.0.22"
               },
               "defaultConfiguration": {
                 "level": "error"
               },
               "help": {
                 "text": "failed to satisfy license requirements",
-                "markdown": "failed to satisfy license requirements\n\n(MIT OR Apache-2.0) AND Unicode-3.0\n\n**License Details:**\n- Apache-2.0: rejected: license is not explicitly allowed\n- Unicode-3.0: rejected: license is not explicitly allowed\n\n**License Information:**\n\nApache-2.0 - Apache License 2.0:\n  - OSI approved\n  - FSF Free/Libre\n\nUnicode-3.0 - Unicode License v3:\n  - OSI approved\n\n\n## Dependency Graph\n\n```\nunicode-ident v1.0.22\n├── proc-macro2 v1.0.105\n│   ├── quote v1.0.43\n│   │   ├── serde_derive v1.0.228\n│   │   │   └── serde v1.0.228\n│   │   │       ├── dummy_crate v0.1.0\n│   │   │       └── serde_yaml v0.8.26\n│   │   │           └── dummy_crate v0.1.0 (*)\n│   │   └── syn v2.0.114\n│   │       └── serde_derive v1.0.228 (*)\n│   ├── serde_derive v1.0.228 (*)\n│   └── syn v2.0.114 (*)\n└── syn v2.0.114 (*)\n\n```\n"
+                "markdown": "failed to satisfy license requirements\n\n(MIT OR Apache-2.0) AND Unicode-3.0\n\n**License Details:**\n- Apache-2.0: rejected: license is not explicitly allowed\n- Unicode-3.0: rejected: license is not explicitly allowed\n\n**License Information:**\n\nApache-2.0 - Apache License 2.0:\n  - OSI approved\n  - FSF Free/Libre\n\nUnicode-3.0 - Unicode License v3:\n  - OSI approved\n\n## Dependency Graph\n\n```\nunicode-ident v1.0.22\n├── proc-macro2 v1.0.105\n│   ├── quote v1.0.43\n│   │   ├── serde_derive v1.0.228\n│   │   │   └── serde v1.0.228\n│   │   │       ├── dummy_crate v0.1.0\n│   │   │       └── serde_yaml v0.8.26\n│   │   │           └── dummy_crate v0.1.0 (*)\n│   │   └── syn v2.0.114\n│   │       └── serde_derive v1.0.228 (*)\n│   ├── serde_derive v1.0.228 (*)\n│   └── syn v2.0.114 (*)\n└── syn v2.0.114 (*)\n```\n"
               },
               "properties": {
                 "tags": [
@@ -171,12 +119,11 @@
       },
       "results": [
         {
-          "ruleId": "cargo-deny/license/no-license-field/dummy_crate@0.1.0",
+          "ruleId": "cargo-deny/license/rejected/instant@0.1.13",
           "message": {
-            "text": "license expression was not specified in manifest for crate 'dummy_crate = 0.1.0'",
-            "markdown": "license expression was not specified in manifest for crate 'dummy_crate = 0.1.0'\n## Dependency Graph\n\n```\ndummy_crate v0.1.0\n\n```\n"
+            "text": "failed to satisfy license requirements !transitive dependency!"
           },
-          "level": "warning",
+          "level": "error",
           "locations": [
             {
               "physicalLocation": {
@@ -184,162 +131,132 @@
                   "uri": "file:///home/npetzall/repos/npetzall/sarif-upload-test/Cargo.toml"
                 },
                 "region": {
-                  "startLine": 1,
-                  "byteOffset": 0,
-                  "byteLength": 0,
-                  "message": {
-                    "text": "manifest file"
-                  }
-                }
-              }
-            }
-          ],
-          "partialFingerprints": {}
-        },
-        {
-          "ruleId": "cargo-deny/license/rejected/dummy_crate@0.1.0",
-          "message": {
-            "text": "failed to satisfy license requirements",
-            "markdown": "failed to satisfy license requirements\n\nApache-2.0\n\n**License Details:**\n- Apache-2.0: rejected: license is not explicitly allowed\n\n**License Information:**\n\nApache-2.0 - Apache License 2.0:\n  - OSI approved\n  - FSF Free/Libre\n\n\n## Dependency Graph\n\n```\ndummy_crate v0.1.0\n\n```\n"
-          },
-          "level": "error",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file://path+file:///home/npetzall/repos/npetzall/sarif-upload-test#dummy_crate@0.1.0-synthesized.toml"
-                },
-                "region": {
-                  "startLine": 5,
-                  "byteOffset": 76,
-                  "byteLength": 10,
+                  "startLine": 7,
+                  "byteOffset": 82,
+                  "byteLength": 16,
                   "snippet": {
-                    "text": "Apache-2.0"
-                  },
-                  "message": {
-                    "text": "rejected: license is not explicitly allowed"
+                    "text": "backoff = \"0.4.0"
                   }
                 }
               }
             }
           ],
-          "partialFingerprints": {}
-        },
-        {
-          "ruleId": "cargo-deny/license/rejected/instant@0.1.13",
-          "message": {
-            "text": "mt: failed to satisfy license requirements",
-            "markdown": "md: failed to satisfy license requirements\n\nBSD-3-Clause\n\n**License Details:**\n- BSD-3-Clause: rejected: license is not explicitly allowed\n\n**License Information:**\n\nBSD-3-Clause - BSD 3-Clause \"New\" or \"Revised\" License:\n  - OSI approved\n  - FSF Free/Libre\n\n\n## Dependency Graph\n\n```\ninstant v0.1.13\n└── backoff v0.4.0\n    └── dummy_crate v0.1.0\n\n```\n"
-          },
-          "level": "error",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///home/npetzall/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/instant-0.1.13/Cargo.toml"
-                },
-                "region": {
-                  "startLine": 23,
-                  "byteOffset": 779,
-                  "byteLength": 12,
-                  "snippet": {
-                    "text": "rs: BSD-3-Clause"
-                  },
-                  "message": {
-                    "text": "rmt: rejected: license is not explicitly allowed"
-                  }
-                }
-              }
-            }
-          ],
-          "partialFingerprints": {}
+          "partialFingerprints": {
+            "cargo-deny/loc": "de057bb40d09e781",
+            "cargo-deny/snippet": "backoff = \"0.4.0"
+          }
         },
         {
           "ruleId": "cargo-deny/license/rejected/ryu@1.0.22",
           "message": {
-            "text": "failed to satisfy license requirements",
-            "markdown": "failed to satisfy license requirements\n\nApache-2.0 OR BSL-1.0\n\n**License Details:**\n- Apache-2.0: rejected: license is not explicitly allowed\n- BSL-1.0: rejected: license is not explicitly allowed\n\n**License Information:**\n\nApache-2.0 - Apache License 2.0:\n  - OSI approved\n  - FSF Free/Libre\n\nBSL-1.0 - Boost Software License 1.0:\n  - OSI approved\n  - FSF Free/Libre\n\n\n## Dependency Graph\n\n```\nryu v1.0.22\n└── serde_yaml v0.8.26\n    └── dummy_crate v0.1.0\n\n```\n"
+            "text": "failed to satisfy license requirements !transitive dependency!"
           },
           "level": "error",
           "locations": [
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///home/npetzall/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ryu-1.0.22/Cargo.toml"
+                  "uri": "file:///home/npetzall/repos/npetzall/sarif-upload-test/Cargo.toml"
                 },
                 "region": {
-                  "startLine": 38,
-                  "byteOffset": 987,
-                  "byteLength": 10,
+                  "startLine": 11,
+                  "byteOffset": 184,
+                  "byteLength": 17,
                   "snippet": {
-                    "text": "Apache-2.0"
-                  },
-                  "message": {
-                    "text": "rejected: license is not explicitly allowed"
+                    "text": "serde_yaml = \"0.8"
                   }
                 }
               }
             }
           ],
-          "partialFingerprints": {}
+          "partialFingerprints": {
+            "cargo-deny/loc": "c2fcaca50e933a44",
+            "cargo-deny/snippet": "serde_yaml = \"0.8"
+          }
         },
         {
           "ruleId": "cargo-deny/license/rejected/subtle@2.6.1",
           "message": {
-            "text": "failed to satisfy license requirements",
-            "markdown": "failed to satisfy license requirements\n\nBSD-3-Clause\n\n**License Details:**\n- BSD-3-Clause: rejected: license is not explicitly allowed\n\n**License Information:**\n\nBSD-3-Clause - BSD 3-Clause \"New\" or \"Revised\" License:\n  - OSI approved\n  - FSF Free/Libre\n\n\n## Dependency Graph\n\n```\nsubtle v2.6.1\n└── rsa v0.9.10\n    └── dummy_crate v0.1.0\n\n```\n"
+            "text": "failed to satisfy license requirements !transitive dependency!"
           },
           "level": "error",
           "locations": [
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///home/npetzall/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/subtle-2.6.1/Cargo.toml"
+                  "uri": "file:///home/npetzall/repos/npetzall/sarif-upload-test/Cargo.toml"
                 },
                 "region": {
-                  "startLine": 43,
-                  "byteOffset": 1126,
+                  "startLine": 8,
+                  "byteOffset": 100,
                   "byteLength": 12,
                   "snippet": {
-                    "text": "BSD-3-Clause"
-                  },
-                  "message": {
-                    "text": "rejected: license is not explicitly allowed"
+                    "text": "rsa = \"0.9.8"
                   }
                 }
               }
             }
           ],
-          "partialFingerprints": {}
+          "partialFingerprints": {
+            "cargo-deny/loc": "3191bef84745b06",
+            "cargo-deny/snippet": "rsa = \"0.9.8"
+          }
         },
         {
           "ruleId": "cargo-deny/license/rejected/unicode-ident@1.0.22",
           "message": {
-            "text": "failed to satisfy license requirements",
-            "markdown": "failed to satisfy license requirements\n\n(MIT OR Apache-2.0) AND Unicode-3.0\n\n**License Details:**\n- Apache-2.0: rejected: license is not explicitly allowed\n- Unicode-3.0: rejected: license is not explicitly allowed\n\n**License Information:**\n\nApache-2.0 - Apache License 2.0:\n  - OSI approved\n  - FSF Free/Libre\n\nUnicode-3.0 - Unicode License v3:\n  - OSI approved\n\n\n## Dependency Graph\n\n```\nunicode-ident v1.0.22\n├── proc-macro2 v1.0.105\n│   ├── quote v1.0.43\n│   │   ├── serde_derive v1.0.228\n│   │   │   └── serde v1.0.228\n│   │   │       ├── dummy_crate v0.1.0\n│   │   │       └── serde_yaml v0.8.26\n│   │   │           └── dummy_crate v0.1.0 (*)\n│   │   └── syn v2.0.114\n│   │       └── serde_derive v1.0.228 (*)\n│   ├── serde_derive v1.0.228 (*)\n│   └── syn v2.0.114 (*)\n└── syn v2.0.114 (*)\n\n```\n"
+            "text": "failed to satisfy license requirements !transitive dependency!"
           },
           "level": "error",
           "locations": [
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///home/npetzall/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/unicode-ident-1.0.22/Cargo.toml"
+                  "uri": "file:///home/npetzall/repos/npetzall/sarif-upload-test/Cargo.toml"
                 },
                 "region": {
-                  "startLine": 36,
-                  "byteOffset": 1077,
-                  "byteLength": 10,
+                  "startLine": 9,
+                  "byteOffset": 114,
+                  "byteLength": 50,
                   "snippet": {
-                    "text": "Apache-2.0"
-                  },
-                  "message": {
-                    "text": "rejected: license is not explicitly allowed"
+                    "text": "serde = { version = \"1.0\", features = [\"derive\"] }"
                   }
                 }
               }
             }
           ],
-          "partialFingerprints": {}
+          "partialFingerprints": {
+            "cargo-deny/loc": "fe84912d8916fb70",
+            "cargo-deny/snippet": "serde = { version = \"1.0\", features = [\"derive\"] }"
+          }
+        },
+        {
+          "ruleId": "cargo-deny/license/rejected/unicode-ident@1.0.22",
+          "message": {
+            "text": "failed to satisfy license requirements !transitive dependency!"
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///home/npetzall/repos/npetzall/sarif-upload-test/Cargo.toml"
+                },
+                "region": {
+                  "startLine": 11,
+                  "byteOffset": 184,
+                  "byteLength": 17,
+                  "snippet": {
+                    "text": "serde_yaml = \"0.8"
+                  }
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "cargo-deny/loc": "c2fcaca50e933a44",
+            "cargo-deny/snippet": "serde_yaml = \"0.8"
+          }
         }
       ]
     }
