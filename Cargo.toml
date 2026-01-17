@@ -2,6 +2,7 @@
 name = "dummy_crate"
 version = "0.1.0"
 edition = "2024"
+license-file = "LICENSE"
 
 [dependencies]
 backoff = "0.4.0"

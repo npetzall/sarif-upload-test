@@ -11,6 +11,32 @@
           "informationUri": "https://embarkstudios.github.io/cargo-deny/",
           "rules": [
             {
+              "id": "cargo-deny/license/no-license-field/dummy_crate@0.1.0",
+              "name": "license expression was not specified in manifest for crate 'dummy_crate = 0.1.0': dummy_crate@0.1.0",
+              "shortDescription": {
+                "text": "license expression was not specified in manifest for crate 'dummy_crate = 0.1.0': dummy_crate@0.1.0"
+              },
+              "fullDescription": {
+                "text": "license expression was not specified in manifest for crate 'dummy_crate = 0.1.0': dummy_crate@0.1.0"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "help": {
+                "text": "license expression was not specified in manifest for crate 'dummy_crate = 0.1.0'",
+                "markdown": "license expression was not specified in manifest for crate 'dummy_crate = 0.1.0'## Dependency Graph\n\n```\ndummy_crate v0.1.0\n```\n"
+              },
+              "properties": {
+                "tags": [
+                  "license",
+                  "compliance",
+                  "no-license-field"
+                ],
+                "precision": "high",
+                "problem.severity": "warning"
+              }
+            },
+            {
               "id": "cargo-deny/license/rejected/instant@0.1.13",
               "name": "failed to satisfy license requirements: instant@0.1.13",
               "shortDescription": {
@@ -119,6 +145,34 @@
       },
       "results": [
         {
+          "ruleId": "cargo-deny/license/no-license-field/dummy_crate@0.1.0",
+          "message": {
+            "text": "license expression was not specified in manifest for crate 'dummy_crate = 0.1.0'"
+          },
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///home/npetzall/repos/npetzall/sarif-upload-test/Cargo.toml"
+                },
+                "region": {
+                  "startLine": 1,
+                  "byteOffset": 0,
+                  "byteLength": 0,
+                  "snippet": {
+                    "text": ""
+                  }
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "cargo-deny/loc": "b1b135bff85d47cd",
+            "cargo-deny/snippet": ""
+          }
+        },
+        {
           "ruleId": "cargo-deny/license/rejected/instant@0.1.13",
           "message": {
             "text": "failed to satisfy license requirements !transitive dependency!"
@@ -131,8 +185,8 @@
                   "uri": "file:///home/npetzall/repos/npetzall/sarif-upload-test/Cargo.toml"
                 },
                 "region": {
-                  "startLine": 7,
-                  "byteOffset": 82,
+                  "startLine": 8,
+                  "byteOffset": 107,
                   "byteLength": 16,
                   "snippet": {
                     "text": "backoff = \"0.4.0"
@@ -142,7 +196,7 @@
             }
           ],
           "partialFingerprints": {
-            "cargo-deny/loc": "de057bb40d09e781",
+            "cargo-deny/loc": "6bb4343fbb5970a9",
             "cargo-deny/snippet": "backoff = \"0.4.0"
           }
         },
@@ -159,8 +213,8 @@
                   "uri": "file:///home/npetzall/repos/npetzall/sarif-upload-test/Cargo.toml"
                 },
                 "region": {
-                  "startLine": 11,
-                  "byteOffset": 184,
+                  "startLine": 12,
+                  "byteOffset": 209,
                   "byteLength": 17,
                   "snippet": {
                     "text": "serde_yaml = \"0.8"
@@ -170,7 +224,7 @@
             }
           ],
           "partialFingerprints": {
-            "cargo-deny/loc": "c2fcaca50e933a44",
+            "cargo-deny/loc": "a849caa68b8d5bec",
             "cargo-deny/snippet": "serde_yaml = \"0.8"
           }
         },
@@ -187,8 +241,8 @@
                   "uri": "file:///home/npetzall/repos/npetzall/sarif-upload-test/Cargo.toml"
                 },
                 "region": {
-                  "startLine": 8,
-                  "byteOffset": 100,
+                  "startLine": 9,
+                  "byteOffset": 125,
                   "byteLength": 12,
                   "snippet": {
                     "text": "rsa = \"0.9.8"
@@ -198,7 +252,7 @@
             }
           ],
           "partialFingerprints": {
-            "cargo-deny/loc": "3191bef84745b06",
+            "cargo-deny/loc": "46b8cac15cd79086",
             "cargo-deny/snippet": "rsa = \"0.9.8"
           }
         },
@@ -215,8 +269,8 @@
                   "uri": "file:///home/npetzall/repos/npetzall/sarif-upload-test/Cargo.toml"
                 },
                 "region": {
-                  "startLine": 9,
-                  "byteOffset": 114,
+                  "startLine": 10,
+                  "byteOffset": 139,
                   "byteLength": 50,
                   "snippet": {
                     "text": "serde = { version = \"1.0\", features = [\"derive\"] }"
@@ -226,7 +280,7 @@
             }
           ],
           "partialFingerprints": {
-            "cargo-deny/loc": "fe84912d8916fb70",
+            "cargo-deny/loc": "a8ec7c195db4b676",
             "cargo-deny/snippet": "serde = { version = \"1.0\", features = [\"derive\"] }"
           }
         },
@@ -243,8 +297,8 @@
                   "uri": "file:///home/npetzall/repos/npetzall/sarif-upload-test/Cargo.toml"
                 },
                 "region": {
-                  "startLine": 11,
-                  "byteOffset": 184,
+                  "startLine": 12,
+                  "byteOffset": 209,
                   "byteLength": 17,
                   "snippet": {
                     "text": "serde_yaml = \"0.8"
@@ -254,7 +308,7 @@
             }
           ],
           "partialFingerprints": {
-            "cargo-deny/loc": "c2fcaca50e933a44",
+            "cargo-deny/loc": "a849caa68b8d5bec",
             "cargo-deny/snippet": "serde_yaml = \"0.8"
           }
         }
