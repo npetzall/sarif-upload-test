@@ -8,6 +8,7 @@
           "name": "cargo-deny",
           "version": "0.18.9",
           "semanticVersion": "0.18.9",
+          "informationUri": "https://embarkstudios.github.io/cargo-deny/",
           "rules": [
             {
               "id": "cargo-deny/RUSTSEC-2023-0071",
@@ -144,7 +145,7 @@
         {
           "ruleId": "cargo-deny/RUSTSEC-2024-0384",
           "message": {
-            "text": "`instant` is unmaintained, transitive dependency"
+            "text": "`instant` is unmaintained !transitive dependency!"
           },
           "level": "error",
           "locations": [
@@ -200,7 +201,7 @@
         {
           "ruleId": "cargo-deny/RUSTSEC-2024-0320",
           "message": {
-            "text": "yaml-rust is unmaintained., transitive dependency"
+            "text": "yaml-rust is unmaintained. !transitive dependency!"
           },
           "level": "error",
           "locations": [
