@@ -24,7 +24,7 @@
               },
               "help": {
                 "text": "license expression was not specified in manifest for crate 'dummy_crate = 0.1.0'",
-                "markdown": "license expression was not specified in manifest for crate 'dummy_crate = 0.1.0'## Dependency Graph\n\n```\ndummy_crate v0.1.0\n```\n"
+                "markdown": "license expression was not specified in manifest for crate 'dummy_crate = 0.1.0'\n\n## Dependency Graph\n\n```\ndummy_crate v0.1.0\n```\n"
               },
               "properties": {
                 "tags": [
@@ -50,7 +50,7 @@
               },
               "help": {
                 "text": "failed to satisfy license requirements",
-                "markdown": "failed to satisfy license requirements\n\nBSD-3-Clause\n\n**License Details:**\n- BSD-3-Clause: rejected: license is not explicitly allowed\n\n**License Information:**\n\nBSD-3-Clause - BSD 3-Clause \"New\" or \"Revised\" License:\n  - OSI approved\n  - FSF Free/Libre\n\n## Dependency Graph\n\n```\ninstant v0.1.13\n└── backoff v0.4.0\n    └── dummy_crate v0.1.0\n```\n"
+                "markdown": "failed to satisfy license requirements\n\nBSD-3-Clause\n\n**License Details:**\n- BSD-3-Clause: rejected: license is not explicitly allowed\n\n**License Information:**\n\nBSD-3-Clause - BSD 3-Clause \"New\" or \"Revised\" License:\n  - OSI approved\n  - FSF Free/Libre\n\n\n\n## Dependency Graph\n\n```\ninstant v0.1.13\n└── backoff v0.4.0\n    └── dummy_crate v0.1.0\n```\n"
               },
               "properties": {
                 "tags": [
@@ -76,7 +76,7 @@
               },
               "help": {
                 "text": "failed to satisfy license requirements",
-                "markdown": "failed to satisfy license requirements\n\nApache-2.0 OR BSL-1.0\n\n**License Details:**\n- Apache-2.0: rejected: license is not explicitly allowed\n- BSL-1.0: rejected: license is not explicitly allowed\n\n**License Information:**\n\nApache-2.0 - Apache License 2.0:\n  - OSI approved\n  - FSF Free/Libre\n\nBSL-1.0 - Boost Software License 1.0:\n  - OSI approved\n  - FSF Free/Libre\n\n## Dependency Graph\n\n```\nryu v1.0.22\n└── serde_yaml v0.8.26\n    └── dummy_crate v0.1.0\n```\n"
+                "markdown": "failed to satisfy license requirements\n\nApache-2.0 OR BSL-1.0\n\n**License Details:**\n- Apache-2.0: rejected: license is not explicitly allowed\n- BSL-1.0: rejected: license is not explicitly allowed\n\n**License Information:**\n\nApache-2.0 - Apache License 2.0:\n  - OSI approved\n  - FSF Free/Libre\n\nBSL-1.0 - Boost Software License 1.0:\n  - OSI approved\n  - FSF Free/Libre\n\n\n\n## Dependency Graph\n\n```\nryu v1.0.22\n└── serde_yaml v0.8.26\n    └── dummy_crate v0.1.0\n```\n"
               },
               "properties": {
                 "tags": [
@@ -102,7 +102,7 @@
               },
               "help": {
                 "text": "failed to satisfy license requirements",
-                "markdown": "failed to satisfy license requirements\n\nBSD-3-Clause\n\n**License Details:**\n- BSD-3-Clause: rejected: license is not explicitly allowed\n\n**License Information:**\n\nBSD-3-Clause - BSD 3-Clause \"New\" or \"Revised\" License:\n  - OSI approved\n  - FSF Free/Libre\n\n## Dependency Graph\n\n```\nsubtle v2.6.1\n└── rsa v0.9.10\n    └── dummy_crate v0.1.0\n```\n"
+                "markdown": "failed to satisfy license requirements\n\nBSD-3-Clause\n\n**License Details:**\n- BSD-3-Clause: rejected: license is not explicitly allowed\n\n**License Information:**\n\nBSD-3-Clause - BSD 3-Clause \"New\" or \"Revised\" License:\n  - OSI approved\n  - FSF Free/Libre\n\n\n\n## Dependency Graph\n\n```\nsubtle v2.6.1\n└── rsa v0.9.10\n    └── dummy_crate v0.1.0\n```\n"
               },
               "properties": {
                 "tags": [
@@ -128,7 +128,7 @@
               },
               "help": {
                 "text": "failed to satisfy license requirements",
-                "markdown": "failed to satisfy license requirements\n\n(MIT OR Apache-2.0) AND Unicode-3.0\n\n**License Details:**\n- Apache-2.0: rejected: license is not explicitly allowed\n- Unicode-3.0: rejected: license is not explicitly allowed\n\n**License Information:**\n\nApache-2.0 - Apache License 2.0:\n  - OSI approved\n  - FSF Free/Libre\n\nUnicode-3.0 - Unicode License v3:\n  - OSI approved\n\n## Dependency Graph\n\n```\nunicode-ident v1.0.22\n├── proc-macro2 v1.0.105\n│   ├── quote v1.0.43\n│   │   ├── serde_derive v1.0.228\n│   │   │   └── serde v1.0.228\n│   │   │       ├── dummy_crate v0.1.0\n│   │   │       └── serde_yaml v0.8.26\n│   │   │           └── dummy_crate v0.1.0 (*)\n│   │   └── syn v2.0.114\n│   │       └── serde_derive v1.0.228 (*)\n│   ├── serde_derive v1.0.228 (*)\n│   └── syn v2.0.114 (*)\n└── syn v2.0.114 (*)\n```\n"
+                "markdown": "failed to satisfy license requirements\n\n(MIT OR Apache-2.0) AND Unicode-3.0\n\n**License Details:**\n- Apache-2.0: rejected: license is not explicitly allowed\n- Unicode-3.0: rejected: license is not explicitly allowed\n\n**License Information:**\n\nApache-2.0 - Apache License 2.0:\n  - OSI approved\n  - FSF Free/Libre\n\nUnicode-3.0 - Unicode License v3:\n  - OSI approved\n\n\n\n## Dependency Graph\n\n```\nunicode-ident v1.0.22\n├── proc-macro2 v1.0.105\n│   ├── quote v1.0.43\n│   │   ├── serde_derive v1.0.228\n│   │   │   └── serde v1.0.228\n│   │   │       ├── dummy_crate v0.1.0\n│   │   │       └── serde_yaml v0.8.26\n│   │   │           └── dummy_crate v0.1.0 (*)\n│   │   └── syn v2.0.114\n│   │       └── serde_derive v1.0.228 (*)\n│   ├── serde_derive v1.0.228 (*)\n│   └── syn v2.0.114 (*)\n└── syn v2.0.114 (*)\n```\n"
               },
               "properties": {
                 "tags": [
