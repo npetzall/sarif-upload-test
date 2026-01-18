@@ -1,0 +1,266 @@
+{
+  "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+  "version": "2.1.0",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "cargo-deny",
+          "version": "0.18.9",
+          "semanticVersion": "0.18.9",
+          "informationUri": "https://embarkstudios.github.io/cargo-deny/",
+          "rules": [
+            {
+              "id": "cargo-deny/ban/duplicate/hashbrown",
+              "name": "found 2 duplicate entries for crate 'hashbrown'",
+              "shortDescription": {
+                "text": "found 2 duplicate entries for crate 'hashbrown'"
+              },
+              "fullDescription": {
+                "text": "found 2 duplicate entries for crate 'hashbrown'"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "help": {
+                "text": "found 2 duplicate entries for crate 'hashbrown'",
+                "markdown": "\n\n## Dependency Graph: hashbrown@0.12.3\n\n```\nhashbrown v0.12.3\n└── indexmap v1.9.3\n    └── serde_yaml v0.8.26\n        └── dummy_crate v0.1.0\n```\n\n\n## Dependency Graph: hashbrown@0.16.1\n\n```\nhashbrown v0.16.1\n└── indexmap v2.13.0\n    └── h2 v0.4.13\n        └── aws-smithy-http-client v1.1.5\n            └── dummy_crate v0.1.0\n```\n"
+              },
+              "properties": {
+                "tags": [
+                  "dependencies",
+                  "supply-chain",
+                  "duplicate"
+                ],
+                "precision": "high",
+                "problem.severity": "warning"
+              }
+            },
+            {
+              "id": "cargo-deny/ban/duplicate/http",
+              "name": "found 2 duplicate entries for crate 'http'",
+              "shortDescription": {
+                "text": "found 2 duplicate entries for crate 'http'"
+              },
+              "fullDescription": {
+                "text": "found 2 duplicate entries for crate 'http'"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "help": {
+                "text": "found 2 duplicate entries for crate 'http'",
+                "markdown": "\n\n## Dependency Graph: http@0.2.12\n\n```\nhttp v0.2.12\n└── aws-smithy-runtime-api v1.10.0\n    └── aws-smithy-http-client v1.1.5\n        └── dummy_crate v0.1.0\n```\n\n\n## Dependency Graph: http@1.4.0\n\n```\nhttp v1.4.0\n├── aws-smithy-runtime-api v1.10.0\n│   └── aws-smithy-http-client v1.1.5\n│       └── dummy_crate v0.1.0\n└── h2 v0.4.13\n    └── aws-smithy-http-client v1.1.5 (*)\n```\n"
+              },
+              "properties": {
+                "tags": [
+                  "dependencies",
+                  "supply-chain",
+                  "duplicate"
+                ],
+                "precision": "high",
+                "problem.severity": "warning"
+              }
+            },
+            {
+              "id": "cargo-deny/ban/duplicate/indexmap",
+              "name": "found 2 duplicate entries for crate 'indexmap'",
+              "shortDescription": {
+                "text": "found 2 duplicate entries for crate 'indexmap'"
+              },
+              "fullDescription": {
+                "text": "found 2 duplicate entries for crate 'indexmap'"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "help": {
+                "text": "found 2 duplicate entries for crate 'indexmap'",
+                "markdown": "\n\n## Dependency Graph: indexmap@1.9.3\n\n```\nindexmap v1.9.3\n└── serde_yaml v0.8.26\n    └── dummy_crate v0.1.0\n```\n\n\n## Dependency Graph: indexmap@2.13.0\n\n```\nindexmap v2.13.0\n└── h2 v0.4.13\n    └── aws-smithy-http-client v1.1.5\n        └── dummy_crate v0.1.0\n```\n"
+              },
+              "properties": {
+                "tags": [
+                  "dependencies",
+                  "supply-chain",
+                  "duplicate"
+                ],
+                "precision": "high",
+                "problem.severity": "warning"
+              }
+            }
+          ]
+        }
+      },
+      "results": [
+        {
+          "ruleId": "cargo-deny/ban/duplicate/hashbrown",
+          "message": {
+            "text": "Detected two or more versions of the same crate !transitive dependency!"
+          },
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///home/npetzall/repos/npetzall/sarif-upload-test/Cargo.toml"
+                },
+                "region": {
+                  "startLine": 12,
+                  "byteOffset": 209,
+                  "byteLength": 17,
+                  "snippet": {
+                    "text": "serde_yaml = \"0.8"
+                  }
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "cargo-deny/loc": "a849caa68b8d5bec",
+            "cargo-deny/snippet": "serde_yaml = \"0.8"
+          }
+        },
+        {
+          "ruleId": "cargo-deny/ban/duplicate/hashbrown",
+          "message": {
+            "text": "Detected two or more versions of the same crate !transitive dependency!"
+          },
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///home/npetzall/repos/npetzall/sarif-upload-test/Cargo.toml"
+                },
+                "region": {
+                  "startLine": 13,
+                  "byteOffset": 228,
+                  "byteLength": 31,
+                  "snippet": {
+                    "text": "aws-smithy-http-client = \"1.1.5"
+                  }
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "cargo-deny/loc": "feaa3d6e87e9189",
+            "cargo-deny/snippet": "aws-smithy-http-client = \"1.1.5"
+          }
+        },
+        {
+          "ruleId": "cargo-deny/ban/duplicate/http",
+          "message": {
+            "text": "Detected two or more versions of the same crate !transitive dependency!"
+          },
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///home/npetzall/repos/npetzall/sarif-upload-test/Cargo.toml"
+                },
+                "region": {
+                  "startLine": 13,
+                  "byteOffset": 228,
+                  "byteLength": 31,
+                  "snippet": {
+                    "text": "aws-smithy-http-client = \"1.1.5"
+                  }
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "cargo-deny/loc": "feaa3d6e87e9189",
+            "cargo-deny/snippet": "aws-smithy-http-client = \"1.1.5"
+          }
+        },
+        {
+          "ruleId": "cargo-deny/ban/duplicate/http",
+          "message": {
+            "text": "Detected two or more versions of the same crate !transitive dependency!"
+          },
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///home/npetzall/repos/npetzall/sarif-upload-test/Cargo.toml"
+                },
+                "region": {
+                  "startLine": 13,
+                  "byteOffset": 228,
+                  "byteLength": 31,
+                  "snippet": {
+                    "text": "aws-smithy-http-client = \"1.1.5"
+                  }
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "cargo-deny/loc": "feaa3d6e87e9189",
+            "cargo-deny/snippet": "aws-smithy-http-client = \"1.1.5"
+          }
+        },
+        {
+          "ruleId": "cargo-deny/ban/duplicate/indexmap",
+          "message": {
+            "text": "Detected two or more versions of the same crate !transitive dependency!"
+          },
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///home/npetzall/repos/npetzall/sarif-upload-test/Cargo.toml"
+                },
+                "region": {
+                  "startLine": 12,
+                  "byteOffset": 209,
+                  "byteLength": 17,
+                  "snippet": {
+                    "text": "serde_yaml = \"0.8"
+                  }
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "cargo-deny/loc": "a849caa68b8d5bec",
+            "cargo-deny/snippet": "serde_yaml = \"0.8"
+          }
+        },
+        {
+          "ruleId": "cargo-deny/ban/duplicate/indexmap",
+          "message": {
+            "text": "Detected two or more versions of the same crate !transitive dependency!"
+          },
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///home/npetzall/repos/npetzall/sarif-upload-test/Cargo.toml"
+                },
+                "region": {
+                  "startLine": 13,
+                  "byteOffset": 228,
+                  "byteLength": 31,
+                  "snippet": {
+                    "text": "aws-smithy-http-client = \"1.1.5"
+                  }
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "cargo-deny/loc": "feaa3d6e87e9189",
+            "cargo-deny/snippet": "aws-smithy-http-client = \"1.1.5"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -23,6 +23,6 @@ jobs:
         uses: github/codeql-action/upload-sarif@v4
         with:
           checkout_path: /home/npetzall/repos/npetzall/sarif-upload-test
-          sarif_file: report_license.sarif
+          sarif_file: report_ban.sarif
           category: cargo-deny
 
